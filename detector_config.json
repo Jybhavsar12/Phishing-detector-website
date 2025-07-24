@@ -1,0 +1,23 @@
+{
+  "suspicious_patterns": [
+    "[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+",
+    "[a-z]+-[a-z]+\\.(tk|ml|ga|cf)",
+    "secure.*login",
+    "verify.*account",
+    "update.*payment",
+    "suspended.*account"
+  ],
+  "whitelist_domains": [
+    "google.com",
+    "facebook.com",
+    "amazon.com",
+    "microsoft.com",
+    "apple.com"
+  ],
+  "ai_model_endpoint": "http://localhost:8000/predict",
+  "threshold_scores": {
+    "low": 0.3,
+    "medium": 0.6,
+    "high": 0.8
+  }
+}
